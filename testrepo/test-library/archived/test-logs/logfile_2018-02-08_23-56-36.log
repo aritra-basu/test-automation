@@ -1,0 +1,45 @@
+2018-02-08 23:56:36,572 INFO  [Log] Test Plan: test_plan_workflow_google_search execution started 
+2018-02-08 23:56:37,117 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:37,118 INFO  [Log] Test Case: [Searching for Instawork in Google Search] Navigate to Google execution started 
+2018-02-08 23:56:37,126 INFO  [Log] Step: 1 started execution. Action: openBrowser | Page Object:  | Test Data: Chrome 
+2018-02-08 23:56:38,619 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-08 23:56:38,628 INFO  [Log] Step: 2 started execution. Action: navigate | Page Object:  | Test Data: BaseURL 
+2018-02-08 23:56:41,984 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-08 23:56:41,991 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-08 23:56:44,005 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-08 23:56:44,013 INFO  [Log] Assertion verification started. Condition: elementExists | Value: Search-Bar 
+2018-02-08 23:56:44,063 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-08 23:56:44,069 INFO  [Log] Test Case: [Searching for Instawork in Google Search] Navigate to Google finished execution. Passed 
+2018-02-08 23:56:44,082 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:44,082 INFO  [Log] Test Case: [Searching for Instawork in Google Search] Search for Instawork and verify result execution started 
+2018-02-08 23:56:44,090 INFO  [Log] Step: 1 started execution. Action: input | Page Object: Search-Bar | Test Data: SearchTerm 
+2018-02-08 23:56:46,273 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-08 23:56:46,279 INFO  [Log] Step: 2 started execution. Action: pressEnter | Page Object: Search-Bar | Test Data:  
+2018-02-08 23:56:49,071 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-08 23:56:49,077 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-08 23:56:51,088 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-08 23:56:51,093 INFO  [Log] Assertion verification started. Condition: elementContainsText | Value: Search-Result-Top 
+2018-02-08 23:56:51,136 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-08 23:56:51,141 INFO  [Log] Test Case: [Searching for Instawork in Google Search] Search for Instawork and verify result finished execution. Passed 
+2018-02-08 23:56:51,150 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:51,150 INFO  [Log] Test Case:  execution started 
+2018-02-08 23:56:51,154 WARN  [Log] Test Case:  skipped execution. 
+2018-02-08 23:56:51,162 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:51,162 INFO  [Log] Test Case:  execution started 
+2018-02-08 23:56:51,166 WARN  [Log] Test Case:  skipped execution. 
+2018-02-08 23:56:51,171 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:51,171 INFO  [Log] Test Case:  execution started 
+2018-02-08 23:56:51,175 WARN  [Log] Test Case:  skipped execution. 
+2018-02-08 23:56:51,180 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:51,180 INFO  [Log] Test Case:  execution started 
+2018-02-08 23:56:51,183 WARN  [Log] Test Case:  skipped execution. 
+2018-02-08 23:56:51,189 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:51,189 INFO  [Log] Test Case:  execution started 
+2018-02-08 23:56:51,192 WARN  [Log] Test Case:  skipped execution. 
+2018-02-08 23:56:51,197 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:51,198 INFO  [Log] Test Case:  execution started 
+2018-02-08 23:56:51,201 WARN  [Log] Test Case:  skipped execution. 
+2018-02-08 23:56:51,208 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-08 23:56:51,208 INFO  [Log] Test Case:  execution started 
+2018-02-08 23:56:51,213 WARN  [Log] Test Case:  skipped execution. 
+2018-02-08 23:56:51,341 INFO  [Log] T--E--S--T P--L--A--N E--N--D 
