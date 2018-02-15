@@ -1,22 +1,12 @@
 package com.test.automation.keywordLibrary;
 
-import java.sql.Connection;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import javax.mail.Folder;
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.Store;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -35,37 +25,7 @@ public class ActionKeywords {
 	public static DesiredCapabilities dc;
 	public static ChromeOptions options;
 	
-	public static Map<String, Object> chromeOptions;
-	public static Map<String, String> mobileEmulation;
-	
-	public static ChromeDriverService chromeDriverService;
-	
-	public static Connection con;
-	
 	public static String parentWinHandle;
-	
-	public static Properties props;
-	public static Session session;
-	public static Store store;
-	
-	public static String authenticationCredentials;
-	public static String proposalID;
-	public static String orderID;
-	public static String psName;
-	public static String productURL;
-	public static String proposalPhotosURL;
-	public static Float itemPrice;
-	public static String itemPriceText;
-	public static String itemName;
-	public static String banner;
-	
-	public static String mailID;
-	public static String mailPassword;
-	public static Folder folder;
-	public static Message[] messages;
-	
-	public static String deviceName;
-	public static List<String> agrsList;
 	
 	public static void openBrowser(WebElement object, String data) throws Exception{	
 		switch (data) {
@@ -84,21 +44,6 @@ public class ActionKeywords {
 		default:
 			break;
 		}
-	}
-	
-	public static void openChromeMobile(WebElement object, String data) throws Exception{
-		
-		ActionKeywords.deviceName = data;
-		ActionKeywords.agrsList.add("start-maximized");
-		ActionKeywords.agrsList.add("disable-web-security");
-		ActionKeywords.agrsList.add("allow-running-insecure-content");
-		ActionKeywords.agrsList.add("incognito");
-		ActionKeywords.agrsList.add("ignore-certificate-errors");
-		ActionKeywords.mobileEmulation.put("deviceName", ActionKeywords.deviceName);
-		ActionKeywords.chromeOptions.put("mobileEmulation", ActionKeywords.mobileEmulation);
-		ActionKeywords.chromeOptions.put("args", ActionKeywords.agrsList);
-		ActionKeywords.dc.setCapability(ChromeOptions.CAPABILITY, ActionKeywords.chromeOptions);
-		driver = new ChromeDriver(dc);
 	}
 
 	public static void navigate(WebElement object, String data) throws Exception{
@@ -154,13 +99,6 @@ public class ActionKeywords {
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 	}
 	
-/*	public static void upload(WebElement object, String data) throws Exception{	
-		object.click();
-		Thread.sleep(2000);
-		Runtime.getRuntime().exec(GlobalConstants.AutoITFileUploadScript + " " + GlobalConstants.TestResourcesDirectory + "\\" + data);
-		Thread.sleep(2000);
-	}*/
-	
 	public static void waitFor(WebElement object, String data) throws Exception{		
 		Thread.sleep(2000);
 	}
@@ -207,19 +145,9 @@ public class ActionKeywords {
 	
 	}
 	
-	public static void loginGmail(WebElement object, String data) throws Exception{	
-		props = new Properties();
-		props.setProperty("mail.store.protocol", "imaps");
-		session = Session.getInstance(props, null);
-		
-		String[] mailCredentials = data.split(":");
-		store = session.getStore();
-		store.connect("imap.gmail.com", mailCredentials[0], mailCredentials[1]);
-		
-		folder = store.getFolder("INBOX");
-        folder.open(Folder.READ_WRITE);
-        
-        messages = folder.getMessages();  
-    }
+	public static void getAttribute(WebElement object, String data) throws Exception{
+		Thread.sleep(2000);
+		System.out.println(data + " of the first result is: " + object.getAttribute(data));
+	}
 
 }

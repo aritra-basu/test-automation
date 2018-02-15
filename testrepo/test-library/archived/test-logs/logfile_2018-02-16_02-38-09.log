@@ -1,0 +1,67 @@
+2018-02-16 02:38:09,659 INFO  [Log] Test Plan: test_plan_workflow_amazon_search execution started 
+2018-02-16 02:38:10,499 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:10,499 INFO  [Log] Test Case: [Searching for a product in Amazon] Navigate to amazon.com execution started 
+2018-02-16 02:38:10,513 INFO  [Log] Step: 1 started execution. Action: openBrowser | Page Object:  | Test Data: Chrome 
+2018-02-16 02:38:14,853 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 02:38:14,869 INFO  [Log] Step: 2 started execution. Action: navigate | Page Object:  | Test Data: BaseURL 
+2018-02-16 02:38:20,019 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-16 02:38:20,051 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 02:38:22,073 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-16 02:38:22,095 INFO  [Log] Assertion verification started. Condition: elementExists | Value: Search-Textbox 
+2018-02-16 02:38:23,522 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-16 02:38:23,550 INFO  [Log] Test Case: [Searching for a product in Amazon] Navigate to amazon.com finished execution. Passed 
+2018-02-16 02:38:23,591 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:23,592 INFO  [Log] Test Case: [Searching for a product in Amazon] Select ‘Books’ category from dropdown execution started 
+2018-02-16 02:38:23,633 INFO  [Log] Step: 1 started execution. Action: click | Page Object: Search-Dropdown | Test Data:  
+2018-02-16 02:38:26,889 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 02:38:26,919 INFO  [Log] Step: 2 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 02:38:28,935 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-16 02:38:28,945 INFO  [Log] Step: 3 started execution. Action: click | Page Object: Search-Dropdown-Books | Test Data:   
+2018-02-16 02:38:31,118 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-16 02:38:31,137 INFO  [Log] Step: 4 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 02:38:33,149 INFO  [Log] Step: 4 finished execution. Passed 
+2018-02-16 02:38:33,157 INFO  [Log] Assertion verification started. Condition: NA | Value: NA 
+2018-02-16 02:38:33,168 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-16 02:38:33,175 INFO  [Log] Test Case: [Searching for a product in Amazon] Select ‘Books’ category from dropdown finished execution. Passed 
+2018-02-16 02:38:33,191 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:33,191 INFO  [Log] Test Case: [Searching for a product in Amazon] Search for particular product execution started 
+2018-02-16 02:38:33,199 INFO  [Log] Step: 1 started execution. Action: input | Page Object: Search-Textbox | Test Data: SearchTerm 
+2018-02-16 02:38:35,665 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 02:38:35,674 INFO  [Log] Step: 2 started execution. Action: click | Page Object: Search-Button | Test Data:  
+2018-02-16 02:38:41,575 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-16 02:38:41,584 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 02:38:43,597 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-16 02:38:43,603 INFO  [Log] Step: 4 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 02:38:45,610 INFO  [Log] Step: 4 finished execution. Passed 
+2018-02-16 02:38:45,617 INFO  [Log] Assertion verification started. Condition: elementExists | Value: Search-Result-First 
+2018-02-16 02:38:45,691 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-16 02:38:45,698 INFO  [Log] Test Case: [Searching for a product in Amazon] Search for particular product finished execution. Passed 
+2018-02-16 02:38:45,712 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:45,712 INFO  [Log] Test Case: [Searching for a product in Amazon] Get the title execution started 
+2018-02-16 02:38:45,721 INFO  [Log] Step: 1 started execution. Action: getAttribute | Page Object: Search-Result-First-Link | Test Data: Attribute 
+2018-02-16 02:38:47,785 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 02:38:47,790 INFO  [Log] Assertion verification started. Condition: NA | Value: NA 
+2018-02-16 02:38:47,799 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-16 02:38:47,808 INFO  [Log] Test Case: [Searching for a product in Amazon] Get the title finished execution. Passed 
+2018-02-16 02:38:47,823 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:47,823 INFO  [Log] Test Case:  execution started 
+2018-02-16 02:38:47,830 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 02:38:47,845 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:47,845 INFO  [Log] Test Case:  execution started 
+2018-02-16 02:38:47,862 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 02:38:47,878 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:47,879 INFO  [Log] Test Case:  execution started 
+2018-02-16 02:38:47,893 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 02:38:47,916 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:47,916 INFO  [Log] Test Case:  execution started 
+2018-02-16 02:38:47,933 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 02:38:47,965 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:47,965 INFO  [Log] Test Case:  execution started 
+2018-02-16 02:38:47,973 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 02:38:47,995 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:47,995 INFO  [Log] Test Case:  execution started 
+2018-02-16 02:38:48,005 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 02:38:48,024 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 02:38:48,024 INFO  [Log] Test Case:  execution started 
+2018-02-16 02:38:48,030 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 02:38:48,364 INFO  [Log] T--E--S--T P--L--A--N E--N--D 

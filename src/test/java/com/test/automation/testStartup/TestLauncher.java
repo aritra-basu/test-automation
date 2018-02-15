@@ -1,7 +1,6 @@
  package com.test.automation.testStartup;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
@@ -168,9 +167,6 @@ public class TestLauncher {
 		  
 		  ActionKeywords.dc = DesiredCapabilities.chrome();
 		  ActionKeywords.options = new ChromeOptions();
-		  ActionKeywords.agrsList = new ArrayList<String>();
-		  ActionKeywords.chromeOptions = new HashMap<String, Object>();
-		  ActionKeywords.mobileEmulation = new HashMap<String, String>();
 		  
 		  System.setProperty(GlobalConstants.ChromeDriverProperty, GlobalConstants.ChromeDriverPath);
 		  
