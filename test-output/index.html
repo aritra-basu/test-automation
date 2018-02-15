@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,  7 skipped,  2 passed</span>
+                    <span class="method-stats">9 methods,  6 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
                     <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.automation.testStartup.TestLauncher" hash-for-method="executeTestCase()">executeTestCase()</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.automation.testStartup.TestLauncher" hash-for-method="executeTestCase()">executeTestCase()</a> <!-- method navigator-link -->
@@ -146,12 +141,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.automation.testStartup.TestLauncher" hash-for-method="executeTestCase([Searching for Instawork in Google Search] Search for Instawork and verify result)">executeTestCase([Searching for Instawork in Google Search] Search for Instawork and verify result)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.automation.testStartup.TestLauncher" hash-for-method="executeTestCase([Searching for a product in Amazon] Navigate to amazon.com)">executeTestCase([Searching for a product in Amazon] Navigate to amazon.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.automation.testStartup.TestLauncher" hash-for-method="executeTestCase([Searching for Instawork in Google Search] Navigate to Google)">executeTestCase([Searching for Instawork in Google Search] Navigate to Google)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.automation.testStartup.TestLauncher" hash-for-method="executeTestCase([Searching for a product in Amazon] Search for particular product)">executeTestCase([Searching for a product in Amazon] Search for particular product)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.test.automation.testStartup.TestLauncher" hash-for-method="executeTestCase([Searching for a product in Amazon] Select ‘Books’ category from dropdown)">executeTestCase([Searching for a product in Amazon] Select ‘Books’ category from dropdown)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -250,19 +250,6 @@
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="executeTestCase()">
-                  </a> <!-- executeTestCase() -->
-                  <span class="method-name">executeTestCase</span>
-                  <span class="parameters">()</span>
-                  <div class="stack-trace">org.testng.SkipException: Already Executed
-	at com.test.automation.executionEngine.TestCaseDriver.executeTestSteps(TestCaseDriver.java:79)
-	at com.test.automation.testStartup.TestLauncher.executeTestCase(TestLauncher.java:60)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
@@ -273,18 +260,26 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="executeTestCase([Searching for Instawork in Google Search] Search for Instawork and verify result)">
-                  </a> <!-- executeTestCase([Searching for Instawork in Google Search] Search for Instawork and verify result) -->
+                  <a name="executeTestCase([Searching for a product in Amazon] Navigate to amazon.com)">
+                  </a> <!-- executeTestCase([Searching for a product in Amazon] Navigate to amazon.com) -->
                   <span class="method-name">executeTestCase</span>
-                  <span class="parameters">([Searching for Instawork in Google Search] Search for Instawork and verify result)</span>
+                  <span class="parameters">([Searching for a product in Amazon] Navigate to amazon.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="executeTestCase([Searching for Instawork in Google Search] Navigate to Google)">
-                  </a> <!-- executeTestCase([Searching for Instawork in Google Search] Navigate to Google) -->
+                  <a name="executeTestCase([Searching for a product in Amazon] Search for particular product)">
+                  </a> <!-- executeTestCase([Searching for a product in Amazon] Search for particular product) -->
                   <span class="method-name">executeTestCase</span>
-                  <span class="parameters">([Searching for Instawork in Google Search] Navigate to Google)</span>
+                  <span class="parameters">([Searching for a product in Amazon] Search for particular product)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="executeTestCase([Searching for a product in Amazon] Select ‘Books’ category from dropdown)">
+                  </a> <!-- executeTestCase([Searching for a product in Amazon] Select ‘Books’ category from dropdown) -->
+                  <span class="method-name">executeTestCase</span>
+                  <span class="parameters">([Searching for a product in Amazon] Select ‘Books’ category from dropdown)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -345,44 +340,44 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'executeTestCase')
 data.setCell(0, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(0, 3, 7882);
+data.setCell(0, 3, 11305);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'executeTestCase')
 data.setCell(1, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(1, 3, 7167);
+data.setCell(1, 3, 11207);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'executeTestCase')
 data.setCell(2, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(2, 3, 11);
+data.setCell(2, 3, 8443);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'executeTestCase')
 data.setCell(3, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(3, 3, 10);
+data.setCell(3, 3, 15);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'executeTestCase')
 data.setCell(4, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(4, 3, 10);
+data.setCell(4, 3, 15);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'executeTestCase')
 data.setCell(5, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(5, 3, 10);
+data.setCell(5, 3, 14);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'executeTestCase')
 data.setCell(6, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(6, 3, 10);
+data.setCell(6, 3, 13);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'executeTestCase')
 data.setCell(7, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(7, 3, 9);
+data.setCell(7, 3, 13);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'executeTestCase')
 data.setCell(8, 2, 'com.test.automation.testStartup.TestLauncher')
-data.setCell(8, 3, 9);
+data.setCell(8, 3, 11);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -410,48 +405,48 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.automation.testStartup.TestLauncher</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">beforeSuite(org.testng.TestRunner@10ad20cb)</span>
+                <span class="method-name">beforeSuite(org.testng.TestRunner@51abf713)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">executeTestCase([Searching for Instawork in Google Search] Navigate to Google)</span>
-                <span class="method-start">661 ms</span>
+                <span class="method-name">executeTestCase([Searching for a product in Amazon] Navigate to amazon.com)</span>
+                <span class="method-start">888 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">executeTestCase([Searching for Instawork in Google Search] Search for Instawork and verify result)</span>
-                <span class="method-start">8545 ms</span>
+                <span class="method-name">executeTestCase([Searching for a product in Amazon] Select ‘Books’ category from dropdown)</span>
+                <span class="method-start">12199 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">executeTestCase()</span>
-                <span class="method-start">15713 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">executeTestCase()</span>
-                <span class="method-start">15725 ms</span>
+                <span class="method-name">executeTestCase([Searching for a product in Amazon] Search for particular product)</span>
+                <span class="method-start">20644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">executeTestCase()</span>
-                <span class="method-start">15736 ms</span>
+                <span class="method-start">31852 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">executeTestCase()</span>
-                <span class="method-start">15746 ms</span>
+                <span class="method-start">31867 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">executeTestCase()</span>
-                <span class="method-start">15755 ms</span>
+                <span class="method-start">31884 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">executeTestCase()</span>
-                <span class="method-start">15766 ms</span>
+                <span class="method-start">31899 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">executeTestCase()</span>
-                <span class="method-start">15777 ms</span>
+                <span class="method-start">31916 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">executeTestCase()</span>
+                <span class="method-start">31928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">15817 ms</span>
+                <span class="method-start">31983 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

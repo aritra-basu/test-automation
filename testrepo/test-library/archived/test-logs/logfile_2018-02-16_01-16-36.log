@@ -1,0 +1,55 @@
+2018-02-16 01:16:37,205 INFO  [Log] Test Plan: test_plan_workflow_amazon_search execution started 
+2018-02-16 01:16:37,836 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:16:37,837 INFO  [Log] Test Case: [Searching for a product in Amazon] Navigate to amazon.com execution started 
+2018-02-16 01:16:37,843 INFO  [Log] Step: 1 started execution. Action: openBrowser | Page Object:  | Test Data: Chrome 
+2018-02-16 01:16:40,804 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 01:16:40,867 INFO  [Log] Step: 2 started execution. Action: navigate | Page Object:  | Test Data: BaseURL 
+2018-02-16 01:16:48,356 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-16 01:16:48,362 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 01:16:50,368 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-16 01:16:50,374 INFO  [Log] Assertion verification started. Condition: elementExists | Value: Search-Textbox 
+2018-02-16 01:16:50,498 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-16 01:16:50,505 INFO  [Log] Test Case: [Searching for a product in Amazon] Navigate to amazon.com finished execution. Passed 
+2018-02-16 01:16:50,519 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:16:50,519 INFO  [Log] Test Case: [Searching for a product in Amazon] Select ‘Books’ category from dropdown execution started 
+2018-02-16 01:16:50,527 INFO  [Log] Step: 1 started execution. Action: click | Page Object: Search-Dropdown | Test Data:  
+2018-02-16 01:16:52,759 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 01:16:52,768 INFO  [Log] Step: 2 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 01:16:54,780 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-16 01:16:54,785 INFO  [Log] Step: 3 started execution. Action: click | Page Object: Search-Dropdown-Books | Test Data:   
+2018-02-16 01:16:56,880 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-16 01:16:56,886 INFO  [Log] Step: 4 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 01:16:58,895 INFO  [Log] Step: 4 finished execution. Passed 
+2018-02-16 01:16:58,901 INFO  [Log] Assertion verification started. Condition: NA | Value: NA 
+2018-02-16 01:16:58,906 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-16 01:16:58,909 INFO  [Log] Test Case: [Searching for a product in Amazon] Select ‘Books’ category from dropdown finished execution. Passed 
+2018-02-16 01:16:58,916 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:16:58,916 INFO  [Log] Test Case: [Searching for a product in Amazon] Search for particular product execution started 
+2018-02-16 01:16:58,921 INFO  [Log] Step: 1 started execution. Action: input | Page Object: Search-Textbox | Test Data: SearchTerm 
+2018-02-16 01:17:01,151 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 01:17:01,156 INFO  [Log] Step: 2 started execution. Action: click | Page Object: Search-Button | Test Data:  
+2018-02-16 01:17:06,752 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-16 01:17:06,758 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 01:17:08,765 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-16 01:17:08,769 INFO  [Log] Assertion verification started. Condition: elementExists | Value: Search-Result-First 
+2018-02-16 01:17:08,807 ERROR [Log] Assertion finished execution. Failed with exception InvalidSelectorException 
+2018-02-16 01:17:08,810 ERROR [Log] Test Case: [Searching for a product in Amazon] Search for particular product finished execution. Failed with exception: InvalidSelectorException 
+2018-02-16 01:17:08,823 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:17:08,823 INFO  [Log] Test Case:  execution started 
+2018-02-16 01:17:08,828 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 01:17:08,840 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:17:08,840 INFO  [Log] Test Case:  execution started 
+2018-02-16 01:17:08,845 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 01:17:08,853 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:17:08,854 INFO  [Log] Test Case:  execution started 
+2018-02-16 01:17:08,860 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 01:17:08,871 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:17:08,871 INFO  [Log] Test Case:  execution started 
+2018-02-16 01:17:08,876 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 01:17:08,886 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:17:08,886 INFO  [Log] Test Case:  execution started 
+2018-02-16 01:17:08,894 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 01:17:08,901 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 01:17:08,901 INFO  [Log] Test Case:  execution started 
+2018-02-16 01:17:08,905 WARN  [Log] Test Case:  skipped execution. 
+2018-02-16 01:17:09,596 INFO  [Log] T--E--S--T P--L--A--N E--N--D 

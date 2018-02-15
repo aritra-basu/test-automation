@@ -1,0 +1,17 @@
+2018-02-16 00:10:46,199 INFO  [Log] Test Plan: test_plan_workflow_amazon_search execution started 
+2018-02-16 00:10:46,619 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 00:10:46,619 INFO  [Log] Test Case: [Searching for a product in Amazon] Navigate to amazon.com execution started 
+2018-02-16 00:10:46,624 INFO  [Log] Step: 1 started execution. Action: openBrowser | Page Object:  | Test Data: Chrome 
+2018-02-16 00:10:46,634 ERROR [Log] Step: 1 finished execution. Failed with exception NullPointerException 
+2018-02-16 00:10:46,641 ERROR [Log] Test Case: [Searching for a product in Amazon] Navigate to amazon.com finished execution. Failed with exception: NullPointerException 
+2018-02-16 00:10:46,652 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 00:10:46,653 INFO  [Log] Test Case: [Searching for a product in Amazon] Select ‘Books’ category from dropdown execution started 
+2018-02-16 00:10:46,660 INFO  [Log] Step: 1 started execution. Action: click | Page Object: Search-Dropdown | Test Data:  
+2018-02-16 00:10:46,670 ERROR [Log] Step: 1 finished execution. Failed with exception NullPointerException 
+2018-02-16 00:10:46,687 ERROR [Log] Test Case: [Searching for a product in Amazon] Select ‘Books’ category from dropdown finished execution. Failed with exception: NullPointerException 
+2018-02-16 00:10:46,702 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 00:10:46,703 INFO  [Log] Test Case: [Searching for a product in Amazon] Search for particular product execution started 
+2018-02-16 00:10:46,711 INFO  [Log] Step: 1 started execution. Action: input | Page Object: Search-Textbox | Test Data: SearchTerm 
+2018-02-16 00:10:46,719 ERROR [Log] Step: 1 finished execution. Failed with exception NullPointerException 
+2018-02-16 00:10:46,725 ERROR [Log] Test Case: [Searching for a product in Amazon] Search for particular product finished execution. Failed with exception: NullPointerException 
+2018-02-16 00:10:46,772 INFO  [Log] T--E--S--T P--L--A--N E--N--D 

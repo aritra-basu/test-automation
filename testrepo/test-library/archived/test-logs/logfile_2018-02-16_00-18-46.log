@@ -1,0 +1,27 @@
+2018-02-16 00:18:46,664 INFO  [Log] Test Plan: test_plan_workflow_amazon_search execution started 
+2018-02-16 00:18:47,224 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 00:18:47,224 INFO  [Log] Test Case: [Searching for a product in Amazon] Navigate to amazon.com execution started 
+2018-02-16 00:18:47,229 INFO  [Log] Step: 1 started execution. Action: openBrowser | Page Object:  | Test Data: Chrome 
+2018-02-16 00:18:49,008 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 00:18:49,016 INFO  [Log] Step: 2 started execution. Action: navigate | Page Object:  | Test Data: BaseURL 
+2018-02-16 00:18:55,890 INFO  [Log] Step: 2 finished execution. Passed 
+2018-02-16 00:18:55,913 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-02-16 00:18:57,923 INFO  [Log] Step: 3 finished execution. Passed 
+2018-02-16 00:18:57,932 INFO  [Log] Assertion verification started. Condition: elementExists | Value: Search-Textbox 
+2018-02-16 00:18:58,047 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-02-16 00:18:58,056 INFO  [Log] Test Case: [Searching for a product in Amazon] Navigate to amazon.com finished execution. Passed 
+2018-02-16 00:18:58,105 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 00:18:58,106 INFO  [Log] Test Case: [Searching for a product in Amazon] Select ‘Books’ category from dropdown execution started 
+2018-02-16 00:18:58,115 INFO  [Log] Step: 1 started execution. Action: click | Page Object: Search-Dropdown | Test Data:  
+2018-02-16 00:19:00,328 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 00:19:00,338 INFO  [Log] Step: 2 started execution. Action: click | Page Object: Search-Dropdown-Books | Test Data:   
+2018-02-16 00:19:00,410 ERROR [Log] Step: 2 finished execution. Failed with exception InvalidSelectorException 
+2018-02-16 00:19:00,417 ERROR [Log] Test Case: [Searching for a product in Amazon] Select ‘Books’ category from dropdown finished execution. Failed with exception: InvalidSelectorException 
+2018-02-16 00:19:00,462 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-02-16 00:19:00,463 INFO  [Log] Test Case: [Searching for a product in Amazon] Search for particular product execution started 
+2018-02-16 00:19:00,470 INFO  [Log] Step: 1 started execution. Action: input | Page Object: Search-Textbox | Test Data: SearchTerm 
+2018-02-16 00:19:02,740 INFO  [Log] Step: 1 finished execution. Passed 
+2018-02-16 00:19:02,748 INFO  [Log] Step: 2 started execution. Action: click | Page Object: Search-Button | Test Data:  
+2018-02-16 00:19:02,811 ERROR [Log] Step: 2 finished execution. Failed with exception InvalidSelectorException 
+2018-02-16 00:19:02,830 ERROR [Log] Test Case: [Searching for a product in Amazon] Search for particular product finished execution. Failed with exception: InvalidSelectorException 
+2018-02-16 00:19:03,131 INFO  [Log] T--E--S--T P--L--A--N E--N--D 
