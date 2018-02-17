@@ -1,31 +1,30 @@
 package com.test.automation.keywordLibrary;
 
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit; 
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import com.test.automation.config.GlobalConstants;
+import com.test.automation.executionEngine.TestCaseDriver;
+import com.test.automation.utilities.MapUtils;
 
 
 public class ActionKeywords {
 	
-	public static WebDriver driver;
-	
-	public static Actions builder;
-	
-	public static DesiredCapabilities caps;
-	
+	public static WebDriver driver; 
+	public static DesiredCapabilities caps;	
 	public static DesiredCapabilities dc;
 	public static ChromeOptions options;
-	
-	public static String parentWinHandle;
+
+	public static String attributeValue;
+	public static String tagText;
 	
 	public static void openBrowser(WebElement object, String data) throws Exception{	
 		switch (data) {
@@ -54,41 +53,12 @@ public class ActionKeywords {
 	public static void click(WebElement object, String data) throws Exception{
 			Thread.sleep(2000);
 			object.click();
-	}
-	
-	public static void actionClick(WebElement object, String data) throws Exception{
-		Thread.sleep(2000);
-		Actions actions = new Actions(driver);
-		actions.moveToElement(object).click().perform();
-	}
-	
-	public static void submit(WebElement object, String data) throws Exception{
-		Thread.sleep(2000);
-		object.submit();		
-	}
-	
-	public static void hover(WebElement object, String data) throws Exception{
-		Thread.sleep(2000);
-		builder = new Actions(driver);
-		builder.moveToElement(object).build().perform();	
-	}
-	
+	} 
 	
 	public static void input(WebElement object, String data) throws Exception{
 		Thread.sleep(2000);
 		object.clear();
 		object.sendKeys(data);
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
-		
-	}
-	
-	public static void actionInput(WebElement object, String data) throws Exception{
-		Thread.sleep(2000);
-		Actions actions = new Actions(driver);
-		actions.moveToElement(object);
-		actions.click();
-		actions.sendKeys(data);
-		actions.build().perform();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		
 	}
@@ -111,43 +81,29 @@ public class ActionKeywords {
 		Thread.sleep(2000);
 		if (driver!=null)
 			driver.quit();
-	}
-	
-	public static void scrollIntoView(WebElement object, String data) throws Exception{
-		Thread.sleep(2000);
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", object);
-	}
-	
-	public static void scrollToTop(WebElement object, String data) throws Exception{
-		Thread.sleep(2000);
-		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,0)");
-	}
-	
-	public static void switchToNewWindow(WebElement object, String data) throws Exception{
-		parentWinHandle = driver.getWindowHandle();
-		for(String winHandle : driver.getWindowHandles()){
-			if(!winHandle.equals(parentWinHandle))
-				driver.switchTo().window(winHandle);
-		}
-	}
-	
-	public static void switchToDefaultWindow(WebElement object, String data) throws Exception{
-		driver.switchTo().window(parentWinHandle);
-	}
-	
-	public static void switchToIframe(WebElement object, String data) throws Exception{
-		driver.switchTo().frame(data);
-		
-	}
-	
-	public static void switchToDefaultIframe(WebElement object, String data) throws Exception{
-		driver.switchTo().parentFrame();
-	
-	}
+	} 
 	
 	public static void getAttribute(WebElement object, String data) throws Exception{
-		Thread.sleep(2000);
-		System.out.println(data + " of the first result is: " + object.getAttribute(data));
+		 attributeValue = object.getAttribute(data);
 	}
-
+	
+	public static void setAttribute(WebElement object, String data) throws Exception{
+		MapUtils.setValueInMapObjectByIdentifier(TestCaseDriver.dataRepositoryMap, TestCaseDriver.splitExpressions[2], GlobalConstants.data, attributeValue);
+	}
+	
+	public static void printAttribute(WebElement object, String data) throws Exception{
+		System.out.println(attributeValue);
+	}
+	
+	public static void getText(WebElement object, String data) throws Exception{
+		 tagText = object.getText();
+	}
+	
+	public static void setText(WebElement object, String data) throws Exception{
+		MapUtils.setValueInMapObjectByIdentifier(TestCaseDriver.dataRepositoryMap, TestCaseDriver.splitExpressions[2], GlobalConstants.data, tagText);
+	}
+	
+	public static void printText(WebElement object, String data) throws Exception{
+		System.out.println(tagText);
+	}
 }
