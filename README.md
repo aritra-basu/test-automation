@@ -17,7 +17,7 @@
 
 2. The test repository folder is named as testrepo. 
 <br/>2.1. Test cases sheet, named test_plan_<<test_plan_name>>, is placed within the folder test-library. Test cases to be executed should have the flag 'N' in the ALready Executed column.
-<br/>2.2. Object and data repository sheet, named object_data repository (which containis 2 sheets - Object-Repository which contains the required page objects to be interacted with and the Data-Repository contains the test data labels) is also placed with the test-library. 
+<br/>2.2. Object and data repository sheet, named object_data repository (which contains 2 sheets - Object-Repository which contains the required page objects to be interacted with and the Data-Repository contains the test data labels) is also placed with the test-library. 
 
 3. Once the test cases sheet is placed in the location, either right-click to run testng.xml as testng suite or right-click to run pom.xml with Maven test run configuration.
 
