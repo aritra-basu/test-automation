@@ -5,9 +5,8 @@
     <classes>
       <class name="com.test.automation.testStartup.TestLauncher">
         <methods>
-          <include name="afterSuite"/>
           <include name="beforeSuite"/>
-          <include name="executeTestCase" invocation-numbers="8 9"/>
+          <include name="executeTestCase" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
         </methods>
       </class> <!-- com.test.automation.testStartup.TestLauncher -->
     </classes>
