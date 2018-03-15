@@ -1,6 +1,12 @@
 package com.test.automation.keywordLibrary;
 
-import java.util.concurrent.TimeUnit; 
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import javax.mail.Folder;
+import javax.mail.Message;
+import javax.mail.Session;
+import javax.mail.Store;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -11,10 +17,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.test.automation.config.GlobalConstants;
-import com.test.automation.executionEngine.TestCaseDriver;
-import com.test.automation.utilities.MapUtils;
-
 
 public class ActionKeywords {
 	
@@ -22,9 +24,15 @@ public class ActionKeywords {
 	public static DesiredCapabilities caps;	
 	public static DesiredCapabilities dc;
 	public static ChromeOptions options;
-
-	public static String attributeValue;
-	public static String tagText;
+	
+	public static Properties props;
+	public static Session session;
+	public static Store store;
+	
+	public static String mailID;
+	public static String mailPassword;
+	public static Folder folder;
+	public static Message[] messages;
 	
 	public static void openBrowser(WebElement object, String data) throws Exception{	
 		switch (data) {
@@ -81,29 +89,20 @@ public class ActionKeywords {
 		Thread.sleep(2000);
 		if (driver!=null)
 			driver.quit();
-	} 
-	
-	public static void getAttribute(WebElement object, String data) throws Exception{
-		 attributeValue = object.getAttribute(data);
 	}
 	
-	public static void setAttribute(WebElement object, String data) throws Exception{
-		MapUtils.setValueInMapObjectByIdentifier(TestCaseDriver.dataRepositoryMap, TestCaseDriver.splitExpressions[2], GlobalConstants.data, attributeValue);
-	}
-	
-	public static void printAttribute(WebElement object, String data) throws Exception{
-		System.out.println(attributeValue);
-	}
-	
-	public static void getText(WebElement object, String data) throws Exception{
-		 tagText = object.getText();
-	}
-	
-	public static void setText(WebElement object, String data) throws Exception{
-		MapUtils.setValueInMapObjectByIdentifier(TestCaseDriver.dataRepositoryMap, TestCaseDriver.splitExpressions[2], GlobalConstants.data, tagText);
-	}
-	
-	public static void printText(WebElement object, String data) throws Exception{
-		System.out.println(tagText);
-	}
+	public static void loginGmail(WebElement object, String data) throws Exception{	
+		props = new Properties();
+		props.setProperty("mail.store.protocol", "imaps");
+		session = Session.getInstance(props, null);
+		
+		String[] mailCredentials = data.split(":");
+		store = session.getStore();
+		store.connect("imap.gmail.com", mailCredentials[0], mailCredentials[1]);
+		
+		folder = store.getFolder("INBOX");
+        folder.open(Folder.READ_WRITE);
+        
+        messages = folder.getMessages();  
+    }
 }

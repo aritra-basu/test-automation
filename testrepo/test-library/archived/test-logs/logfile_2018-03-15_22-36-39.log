@@ -1,0 +1,119 @@
+2018-03-15 22:36:40,058 INFO  [Log] Test Plan: test_plan_wishlist_addition_swym_demo execution started 
+2018-03-15 22:36:40,399 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:36:40,399 INFO  [Log] Test Case: [Wishlist] Navigate to Swym Demo Home execution started 
+2018-03-15 22:36:40,405 INFO  [Log] Step: 1 started execution. Action: openBrowser | Page Object:  | Test Data: Chrome 
+2018-03-15 22:36:42,175 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:36:42,181 INFO  [Log] Step: 2 started execution. Action: navigate | Page Object:  | Test Data: BaseURL 
+2018-03-15 22:36:50,392 INFO  [Log] Step: 2 finished execution. Passed 
+2018-03-15 22:36:50,399 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-03-15 22:36:52,410 INFO  [Log] Step: 3 finished execution. Passed 
+2018-03-15 22:36:52,417 INFO  [Log] Assertion verification started. Condition: elementExists | Value: Home-Logo 
+2018-03-15 22:36:52,469 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:36:52,475 INFO  [Log] Test Case: [Wishlist] Navigate to Swym Demo Home finished execution. Passed 
+2018-03-15 22:36:52,486 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:36:52,487 INFO  [Log] Test Case: [Wishlist] Navigate to Product details page execution started 
+2018-03-15 22:36:52,500 INFO  [Log] Step: 1 started execution. Action: click | Page Object: Product-DaisyDress | Test Data:  
+2018-03-15 22:36:55,855 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:36:55,861 INFO  [Log] Step: 2 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-03-15 22:36:57,869 INFO  [Log] Step: 2 finished execution. Passed 
+2018-03-15 22:36:57,874 INFO  [Log] Assertion verification started. Condition: elementExists | Value: AddToWishList-Button 
+2018-03-15 22:36:57,910 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:36:57,915 INFO  [Log] Test Case: [Wishlist] Navigate to Product details page finished execution. Passed 
+2018-03-15 22:36:57,925 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:36:57,925 INFO  [Log] Test Case: [Wishlist] Add Product to Wishlist and Validate the product to Wishlist execution started 
+2018-03-15 22:36:57,932 INFO  [Log] Step: 1 started execution. Action: click | Page Object: AddToWishList-Button | Test Data:  
+2018-03-15 22:37:00,152 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:00,157 INFO  [Log] Step: 2 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-03-15 22:37:02,167 INFO  [Log] Step: 2 finished execution. Passed 
+2018-03-15 22:37:02,170 INFO  [Log] Assertion verification started. Condition: elementExists | Value: AddedToWishList-Text 
+2018-03-15 22:37:02,203 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:02,206 INFO  [Log] Test Case: [Wishlist] Add Product to Wishlist and Validate the product to Wishlist finished execution. Passed 
+2018-03-15 22:37:02,213 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:02,213 INFO  [Log] Test Case: [Wishlist] Navigate to Wishlist execution started 
+2018-03-15 22:37:02,218 INFO  [Log] Step: 1 started execution. Action: click | Page Object: Wishlist-MenuLink | Test Data:  
+2018-03-15 22:37:04,384 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:04,392 INFO  [Log] Step: 2 started execution. Action: click | Page Object: AccessWishlist-Button | Test Data:  
+2018-03-15 22:37:06,504 INFO  [Log] Step: 2 finished execution. Passed 
+2018-03-15 22:37:06,508 INFO  [Log] Step: 3 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-03-15 22:37:08,516 INFO  [Log] Step: 3 finished execution. Passed 
+2018-03-15 22:37:08,520 INFO  [Log] Assertion verification started. Condition: elementExists | Value: MyWishList-TabLink 
+2018-03-15 22:37:08,557 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:08,560 INFO  [Log] Test Case: [Wishlist] Navigate to Wishlist finished execution. Passed 
+2018-03-15 22:37:08,567 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:08,567 INFO  [Log] Test Case: [Wishlist] Navigate to My Wishlist tab execution started 
+2018-03-15 22:37:08,570 INFO  [Log] Step: 1 started execution. Action: click | Page Object: MyWishList-TabLink | Test Data:  
+2018-03-15 22:37:10,645 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:10,652 INFO  [Log] Step: 2 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-03-15 22:37:12,663 INFO  [Log] Step: 2 finished execution. Passed 
+2018-03-15 22:37:12,666 INFO  [Log] Assertion verification started. Condition: elementExists | Value: Email-Button 
+2018-03-15 22:37:12,699 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:12,702 INFO  [Log] Test Case: [Wishlist] Navigate to My Wishlist tab finished execution. Passed 
+2018-03-15 22:37:12,709 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:12,710 INFO  [Log] Test Case: [Wishlist] Navigate to Email section execution started 
+2018-03-15 22:37:12,714 INFO  [Log] Step: 1 started execution. Action: click | Page Object: Email-Button | Test Data:  
+2018-03-15 22:37:14,783 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:14,787 INFO  [Log] Assertion verification started. Condition: elementExists | Value: SendEmail-Button 
+2018-03-15 22:37:14,826 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:14,829 INFO  [Log] Test Case: [Wishlist] Navigate to Email section finished execution. Passed 
+2018-03-15 22:37:14,838 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:14,838 INFO  [Log] Test Case: [Wishlist] Send Email execution started 
+2018-03-15 22:37:14,845 INFO  [Log] Step: 1 started execution. Action: input | Page Object: EmailFromName-Textbox | Test Data: EmailFromName 
+2018-03-15 22:37:17,006 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:17,009 INFO  [Log] Step: 2 started execution. Action: input | Page Object: EmailToAddress-Textbox | Test Data: EmailToAddress 
+2018-03-15 22:37:19,179 INFO  [Log] Step: 2 finished execution. Passed 
+2018-03-15 22:37:19,183 INFO  [Log] Step: 3 started execution. Action: click | Page Object: SendEmail-Button | Test Data:  
+2018-03-15 22:37:21,264 INFO  [Log] Step: 3 finished execution. Passed 
+2018-03-15 22:37:21,267 INFO  [Log] Assertion verification started. Condition: elementExists | Value: EmailSuccess-Message 
+2018-03-15 22:37:22,300 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:22,303 INFO  [Log] Test Case: [Wishlist] Send Email finished execution. Passed 
+2018-03-15 22:37:22,309 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:22,309 INFO  [Log] Test Case: [Wishlist] Close Wishlist Screen execution started 
+2018-03-15 22:37:22,313 INFO  [Log] Step: 1 started execution. Action: click | Page Object: CloseWishList-Button | Test Data:  
+2018-03-15 22:37:24,391 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:24,394 INFO  [Log] Assertion verification started. Condition: NA | Value: NA 
+2018-03-15 22:37:24,397 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:24,400 INFO  [Log] Test Case: [Wishlist] Close Wishlist Screen finished execution. Passed 
+2018-03-15 22:37:24,407 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:24,407 INFO  [Log] Test Case: [Wishlist] Remove from Wishlist execution started 
+2018-03-15 22:37:24,413 INFO  [Log] Step: 1 started execution. Action: click | Page Object: RemoveFromWishlist-Button | Test Data:  
+2018-03-15 22:37:26,512 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:26,515 INFO  [Log] Step: 2 started execution. Action: refreshBrowser | Page Object:  | Test Data:  
+2018-03-15 22:37:28,070 INFO  [Log] Step: 2 finished execution. Passed 
+2018-03-15 22:37:28,073 INFO  [Log] Assertion verification started. Condition: NA | Value: NA 
+2018-03-15 22:37:28,076 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:28,079 INFO  [Log] Test Case: [Wishlist] Remove from Wishlist finished execution. Passed 
+2018-03-15 22:37:28,104 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:28,104 INFO  [Log] Test Case: [Wishlist] Check email received execution started 
+2018-03-15 22:37:28,110 INFO  [Log] Step: 1 started execution. Action: loginGmail | Page Object:  | Test Data: EmailCredentials 
+2018-03-15 22:37:30,993 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:30,996 INFO  [Log] Step: 2 started execution. Action: waitFor | Page Object:  | Test Data:  
+2018-03-15 22:37:33,000 INFO  [Log] Step: 2 finished execution. Passed 
+2018-03-15 22:37:33,004 INFO  [Log] Assertion verification started. Condition: emailSubjectContains | Value: Wishlist 
+2018-03-15 22:37:33,337 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:33,341 INFO  [Log] Test Case: [Wishlist] Check email received finished execution. Passed 
+2018-03-15 22:37:33,347 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:33,347 INFO  [Log] Test Case: [Wishlist] Close Browser execution started 
+2018-03-15 22:37:33,351 INFO  [Log] Step: 1 started execution. Action: closeBrowser | Page Object:  | Test Data:  
+2018-03-15 22:37:35,442 INFO  [Log] Step: 1 finished execution. Passed 
+2018-03-15 22:37:35,455 INFO  [Log] Assertion verification started. Condition: NA | Value: NA 
+2018-03-15 22:37:35,459 INFO  [Log] Assertion verification finished. Actual result equals expected result 
+2018-03-15 22:37:35,463 INFO  [Log] Test Case: [Wishlist] Close Browser finished execution. Passed 
+2018-03-15 22:37:35,471 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:35,472 INFO  [Log] Test Case:  execution started 
+2018-03-15 22:37:35,476 WARN  [Log] Test Case:  skipped execution. 
+2018-03-15 22:37:35,493 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:35,493 INFO  [Log] Test Case:  execution started 
+2018-03-15 22:37:35,516 WARN  [Log] Test Case:  skipped execution. 
+2018-03-15 22:37:35,521 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:35,522 INFO  [Log] Test Case:  execution started 
+2018-03-15 22:37:35,526 WARN  [Log] Test Case:  skipped execution. 
+2018-03-15 22:37:35,538 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:35,538 INFO  [Log] Test Case:  execution started 
+2018-03-15 22:37:35,544 WARN  [Log] Test Case:  skipped execution. 
+2018-03-15 22:37:35,551 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:35,551 INFO  [Log] Test Case:  execution started 
+2018-03-15 22:37:35,556 WARN  [Log] Test Case:  skipped execution. 
+2018-03-15 22:37:35,563 INFO  [Log] ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2018-03-15 22:37:35,563 INFO  [Log] Test Case:  execution started 
+2018-03-15 22:37:35,570 WARN  [Log] Test Case:  skipped execution. 
+2018-03-15 22:37:35,762 INFO  [Log] T--E--S--T P--L--A--N E--N--D 

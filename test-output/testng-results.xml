@@ -1,112 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36481" started-at="2018-02-17T10:55:24Z" finished-at="2018-02-17T10:56:00Z">
+  <suite name="Suite" duration-ms="55569" started-at="2018-03-15T17:17:08Z" finished-at="2018-03-15T17:18:04Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="36481" started-at="2018-02-17T10:55:24Z" finished-at="2018-02-17T10:56:00Z">
+    <test name="Test" duration-ms="55569" started-at="2018-03-15T17:17:08Z" finished-at="2018-03-15T17:18:04Z">
       <class name="com.test.automation.testStartup.TestLauncher">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="beforeSuite" is-config="true" duration-ms="812" started-at="2018-02-17T16:25:23Z" finished-at="2018-02-17T16:25:24Z">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="beforeSuite" is-config="true" duration-ms="807" started-at="2018-03-15T22:47:08Z" finished-at="2018-03-15T22:47:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1b70203f]]>
+                <![CDATA[org.testng.TestRunner@4482469c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="12452" started-at="2018-02-17T16:25:24Z" data-provider="testCaseNameProvider" finished-at="2018-02-17T16:25:36Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="11710" started-at="2018-03-15T22:47:09Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Searching for a product in Amazon] Navigate to Amazon.com]]>
+                <![CDATA[[Wishlist] Navigate to Swym Demo Home]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="13515" started-at="2018-02-17T16:25:36Z" data-provider="testCaseNameProvider" finished-at="2018-02-17T16:25:50Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="5388" started-at="2018-03-15T22:47:20Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Searching for a product in Amazon] Select ‘Books’ category from dropdown]]>
+                <![CDATA[[Wishlist] Navigate to Product details page]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="10072" started-at="2018-02-17T16:25:50Z" data-provider="testCaseNameProvider" finished-at="2018-02-17T16:26:00Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="4259" started-at="2018-03-15T22:47:26Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Searching for a product in Amazon] Search for particular product]]>
+                <![CDATA[[Wishlist] Add Product to Wishlist and Validate the product to Wishlist]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="76" started-at="2018-02-17T16:26:00Z" data-provider="testCaseNameProvider" finished-at="2018-02-17T16:26:00Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="6334" started-at="2018-03-15T22:47:30Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Searching for a product in Amazon] Get the title]]>
+                <![CDATA[[Wishlist] Navigate to Wishlist]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="85" started-at="2018-02-17T16:26:00Z" data-provider="testCaseNameProvider" finished-at="2018-02-17T16:26:00Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="4189" started-at="2018-03-15T22:47:36Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Searching for a product in Amazon] Get first edition type]]>
+                <![CDATA[[Wishlist] Navigate to My Wishlist tab]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="79" started-at="2018-02-17T16:26:00Z" data-provider="testCaseNameProvider" finished-at="2018-02-17T16:26:00Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="2136" started-at="2018-03-15T22:47:40Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Searching for a product in Amazon] Get first edition price]]>
+                <![CDATA[[Wishlist] Navigate to Email section]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="89" started-at="2018-02-17T16:26:00Z" data-provider="testCaseNameProvider" finished-at="2018-02-17T16:26:00Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="7458" started-at="2018-03-15T22:47:43Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Searching for a product in Amazon] Get second edition type]]>
+                <![CDATA[[Wishlist] Send Email]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="79" started-at="2018-02-17T16:26:00Z" data-provider="testCaseNameProvider" finished-at="2018-02-17T16:26:00Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="2111" started-at="2018-03-15T22:47:50Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Searching for a product in Amazon] Get second edition price]]>
+                <![CDATA[[Wishlist] Close Wishlist Screen]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTestCase -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="afterSuite" is-config="true" duration-ms="2576" started-at="2018-02-17T16:26:00Z" finished-at="2018-02-17T16:26:03Z">
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="4579" started-at="2018-03-15T22:47:52Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Wishlist] Remove from Wishlist]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeTestCase -->
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="2122" started-at="2018-03-15T22:47:57Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:47:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Wishlist] Close Browser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeTestCase -->
+        <test-method status="PASS" signature="executeTestCase(java.lang.String)[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="executeTestCase" duration-ms="5240" started-at="2018-03-15T22:47:59Z" data-provider="testCaseNameProvider" finished-at="2018-03-15T22:48:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Wishlist] Check email received]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeTestCase -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.test.automation.testStartup.TestLauncher@3f49dace]" name="afterSuite" is-config="true" duration-ms="3094" started-at="2018-03-15T22:48:04Z" finished-at="2018-03-15T22:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

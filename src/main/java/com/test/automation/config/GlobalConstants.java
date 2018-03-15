@@ -33,8 +33,6 @@ public class GlobalConstants {
 	public static String fieldName = "Field Name";
 	public static String data = "Data";
 	
-	public static String searchedTerm = "Instawork";
-	
 	public static String TestMetricsSuiteWise = "Suite-Wise Report";
 	public static String report_TestSuite = "Test Suite";
 	public static String totalTestCases = "Total Test Cases";
